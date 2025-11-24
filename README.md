@@ -12,7 +12,8 @@ This project develops a CNN-based classifier to identify AI-generated cover song
 
 **Duration**: July 2024 - August 2024  
 **Team**: 6 members  
-**Dataset**: Original songs vs AI cover versions (
+**Dataset**: Original songs vs AI cover versions  
+🎧 [Listen to sample audio here](https://kmjng.netlify.app/second)
 
 ## 🎯 Motivation
 
@@ -23,7 +24,7 @@ This project develops a CNN-based classifier to identify AI-generated cover song
 
 ## 🔧 Tech Stack
 
-- **Language**: Python 3.8+
+- **Language**: Python 3.10+
 - **Deep Learning**: TensorFlow/Keras
 - **Audio Processing**: Librosa
 - **Visualization**: UMAP, Matplotlib
