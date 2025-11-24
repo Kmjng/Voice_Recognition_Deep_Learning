@@ -39,7 +39,7 @@ Audio Input → MFCC Extraction (100 coefficients) → Temporal Averaging
 → Zero Crossing Rate → 101-D Feature Vector
 ```
 ### Model
-- **Type**: 1D Convolutional Neural Network (CNN)
+- **Type**: 1D Convolutional Neural Network (Based on CNN)
 - **Input**: MFCC feature vectors (101-dimensional)
 - **Architecture**: 
   - 3 x Conv1D layers (ReLU activation)
@@ -48,7 +48,8 @@ Audio Input → MFCC Extraction (100 coefficients) → Temporal Averaging
   - Binary classification output (Sigmoid activation for AI vs Original)
 
 ## 📊 Key Results
-
-- **CNN Model**: Achieved stable performance with ~**98%** training accuracy.
-- **Robustness**: MFCC와 GFCC 모두 사용하여 특징 추출의 다양성을 시도했습니다.
-- **Generalization**: Early Stopping을 적용하여 과적합을 방지하고 테스트 데이터셋에서 **80~85%**의 검증 정확도를 보였습니다.
+- **Model Selection**: Both CNN and DNN achieved training accuracy close to 95~98%, but CNN showed more stable performance on the validation set, leading to its selection as the final model.
+- **Feature Extraction**: We experimented with various feature extraction methods using both MFCC and GFCC, confirming their suitability for the task.
+- **Generalization**:
+  - Applied Early Stopping to prevent overfitting
+  - Achieved **80~85%** validation accuracy on the test dataset
